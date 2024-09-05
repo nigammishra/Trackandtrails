@@ -1,0 +1,212 @@
+
+.section-padding{
+    padding-top: 100px;
+}
+
+
+
+.hero-text{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+
+.hero-paragraph{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.booknowbutton{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sub-heading-content{
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+.sub-heading-content::before {
+    content: "";
+    display: inline-block; /* Ensure it displays as an inline element */
+    width: 30px;
+    height: 1px;
+    background-color: #4CAF50;
+    margin-right: 10px; /* Space between line and text */
+    position: relative;
+    top: -7px;
+}
+
+.sub-heading-content::after {
+    content: "";
+    display: inline-block; /* Ensure it displays as an inline element */
+    width: 30px;
+    height: 1px;
+    background-color: #4CAF50;
+    margin-left: 10px; /* Space between text and line */
+    position: relative;
+    top: -7px;
+}
+
+.sub-heading-second{
+    font-family: "Poppins", Sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.sub-heading-third{
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+}
+
+.number{
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus{
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.number-count-text{
+    font-family: "Poppins", Sans-serif;
+    font-weight: 700;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+    color: #555;
+
+}
+
+.number-count-spantext{
+    font-family: "Poppins", Sans-serif;
+}
+
+.howitwork{
+    height: 100%;
+    width: 100%;
+    background-color: #252525;
+    margin-top: 100px;
+}
+
+/* Basic styling for the tab container */
+.tab-container {
+    width: 80%; /* Container width */
+    margin: 0 auto; /* Center align the tab container */
+    font-family: Arial, sans-serif; /* Font styling */
+    /* border: 1px solid #ddd; Border for the tab container */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hides content outside the container */
+  }
+  
+  /* Styling for the tab titles */
+  .tab-titles {
+   
+    /* background-color: #f4f4f4; Background color for the tabs */
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  .tab-title {
+    padding: 10px 20px; /* Padding for the tab title */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-align: center; /* Center align the text */
+    flex-grow: 1; /* Equal width for all tabs */
+  }
+  
+  /* Active tab title styling */
+  .tab-title.active {
+    background-color: #4CAF50; /* White background for the active tab */
+    font-weight: bold; /* Bold font for the active tab */
+    color: #fff;
+    border-radius: 10px;
+    /* border-bottom: 2px solid #007bff; Bottom border for the active tab */
+  }
+  
+  /* Hover effect for the tab titles */
+  .tab-title:hover {
+    /* background-color: #e9ecef; Light grey background on hover */
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  /* Styling for the tab contents */
+  .tab-contents {
+    padding: 20px; /* Padding for the tab content */
+    background-color: #fff; /* Background color for the content area */
+  }
+  
+  /* Hide all tab content by default */
+  .tab-content {
+    display: none; /* Hide all tab content */
+  }
+  
+  /* Show the active tab content */
+  .tab-content.active {
+    display: block; /* Show the active tab content */
+  }
+
+  .tablist-new {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease; /* Smooth transition */
+  }
+  .toggle-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .expanded {
+    height: auto;
+  }
+
+
+  .number {
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .plus {
+    font-size: 0.5em;
+    position: absolute;
+    top: 0;
+    right: -0.5em;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .number-count-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .number-count-spantext {
+    display: block;
+    margin-top: 5px;
+  }
+  
+/* responsive css */
+
+
+  /* Mobile-specific styling */
+  @media (max-width: 767px) {
+    .hero-responsive-image {
+      width: 300px; /* Sets the width to 300px for mobile view */
+    }
+  }
+  
