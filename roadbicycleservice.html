@@ -7,20 +7,76 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-<!-- Link Swiper's CSS -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<!-- FontAwesome for stars -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- FontAwesome for stars -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
   <link rel="stylesheet" href="asset/style.css">
   <link rel="stylesheet" href="asset/index.css">
+  <style>
+    .sub-heading-content {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
+    .sub-heading-second {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+
+    .loch2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .lohe {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 800;
+      margin-top: 15px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 50px;
+      /* calc(2 * 25px) */
+    }
+
+    .booknowbutton {
+      background-color: #08b427;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .booknowbutton:hover {
+      background-color: #ff4500;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .col-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,7 +98,8 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               About Us
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,18 +111,19 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <a class="nav-link" href="./service.html">Service</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Packages
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./nongearbicycleservice.html">Non Gear Bicycle Service</a></li>
-                <li><a class="dropdown-item" href="./gearbicycleservice.html">Gear Bicycle Service</a></li>
-                <li><a class="dropdown-item" href="./roadbicycleservice.html">Road Bicycle Service</a></li>
-                <li><a class="dropdown-item" href="./newbicycleservices.html">New Bicycle Assembling</a></li>
-                <li><a class="dropdown-item" href="./dismantlingandboxing.html">Dismantling and Boxing</a></li>
-              </ul>
+              <li><a class="dropdown-item" href="./nongearbicycleservice.html">Non Gear Bicycle Service</a></li>
+              <li><a class="dropdown-item" href="./gearbicycleservice.html">Gear Bicycle Service</a></li>
+              <li><a class="dropdown-item" href="./roadbicycleservice.html">Road Bicycle Service</a></li>
+              <li><a class="dropdown-item" href="./newbicycleservices.html">New Bicycle Assembling</a></li>
+              <li><a class="dropdown-item" href="./dismantlingandboxing.html">Dismantling and Boxing</a></li>
+            </ul>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="./gallery.html">Gallery</a>
           </li>
@@ -73,7 +131,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <a class="nav-link" href="./preowned.html">Pre-owned cycle</a>
           </li>
           <li class="nav-item">
-            <a class="headerbtn btn" href="./bookmyslot.html" >Book my slot</a>
+            <a class="headerbtn btn" href="./bookmyslot.html">Book my slot</a>
           </li>
         </ul>
         <!-- <div class="cart" style="margin-left: auto;position: relative;">
@@ -93,130 +151,245 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   <section class="">
     <!-- Start Page Title Area -->
     <div class=" page-title-area">
-       <div class="d-table">
-           <div class="d-table-cell">
-               <div class="container">
-                   <div class="page-title-content">
-                       <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li>Road Bicycle Service </li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-</section>
-
-
-<section class="section-padding">
-  <div class="container">
-    <p class="sub-heading-content">Packages</p>
-    <p class="sub-heading-second" style="font-size: 40px;">Road Bicycle Service Package</p>
-    <div class="container" style="background-color: #3635352f; border-radius: 10px; padding: 20px;">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt neque iusto! Recusandae nihil obcaecati omnis perspiciatis ab officiis, minus corporis. Ipsum sequi sed velit rem fugit magni, incidunt repellendus?
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="page-title-content">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Road Bicycle Service </li>
+              </ul>
+            </div>
+          </div>
         </div>
-  </div>
-</section>
+      </div>
+    </div>
+  </section>
 
 
-  <section class="section-padding mt-5" >
-    <!-- footer -->
-    <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-3">
-                  <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;font-size: 26px;"><span style="color: #08b427;">Track &</span> Trails</a>
-                  <p style="font-size: 15px;padding: 15px 0;opacity: 0.8;">We is Company with experience over for 10 Years and we can give your best bikes in the world with accesories.</p>
-                 
-              </div>
-              <div class="col-lg-2">
-                  <h6 class="text-center">Company</h6>
-                  <ul>
-                      <li>
-                          <a href="./aboutus.html">About US</a>
-                      </li>
-                      <li>
-                          <a href="..html">Our Packages</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Services</a>
-                      </li>
-                      <li>
-                          <a href="./bookmyslot.html">Book My Slot</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-lg-2">
-                  <h6 class="text-center">Services</h6>
-                  <ul>
-                      <li>
-                          <a href="./service.html">Road Bikes</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Mountain Bikes</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Hybird Bikes</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Electronic Bikes</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Equipment</a>
-                      </li>
-                      <li>
-                          <a href="./service.html">Apparel</a>
-                      </li>
-                  </ul>
-              </div>
-              
-              <div class="col-lg-2">
-                  <h6 class="text-center">Support</h6>
-                  <ul>
-                      <li>
-                          <a href="./contact.html">Customers Service</a>
-                      </li>
-                      <!-- <li>
-                          <a href="./contact.html">Warrantly</a>
-                      </li> -->
-                      <li>
-                          <a href="./contact.html">Bike Sizing & Fit</a>
-                      </li>
-                      <li>
-                          <a href="./contact.html">Guides</a>
-                      </li>
-                      <li>
-                          <a href="./contact.html">Manuals & User</a>
-                      </li>
-                      <li>
-                          <a href="./contact.html">Guides</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-lg-3">
-                <h6>Follow us on social media</h6>
-                <div class="medsos" style="font-size: 25px;margin: 10px 0  20px 0;">
-                  <i class="fab fa-facebook-f" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 15px;border-radius: 50%;"></i>
-                  <i class="fab fa-instagram" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 13px;border-radius: 50%;"></i>
-                  <i class="fab fa-twitter" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 11px;border-radius: 50%;"></i>
-                  <i class="fab fa-linkedin" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 11px 13px;border-radius: 50%;"></i>
+  <section class="section-padding">
+    <div class="container">
+      <p class="sub-heading-content">Packages</p>
+      <p class="sub-heading-second" style="font-size: 40px;">Road Bicycle Service Package</p>
+      <div class="container" style="background-color: #3635352f; border-radius: 10px; padding: 20px;">
+
+        <h2 class="loch2">Non-Gear Bicycle Repair &amp; Service at Fix My Cycle!Breathe New Life into Your Ride</h2>
+        <p>Searching for non-gear bicycle repair, cycle service for your fixie, or a general bicycle tune-up near you?
+          Fix My Cycle offers comprehensive service packages designed specifically for non-gear cycles (fixies,
+          single-speeds, etc.) to keep your trusty two-wheeled companion running smoothly and safely.</p>
+        <p>Book online today! We make it easy to schedule your non-gear bicycle repair appointment and get back on the
+          road in no time.</p>
+        <h3 class="lohe">Packages to Fit Your Non-Gear Needs:</h3>
+
+        <p><strong>Standard Tune-Up (Perfect for Regularly Used Non-Gear Cycles):</strong></p>
+        <ul>
+          <li><strong>Boost Shifting Performance:</strong> Ensure smooth and precise gear changes for optimal power
+            delivery.</li>
+          <li><strong>Confident Stopping Power:</strong> Maintain reliable braking for safe riding in any condition.
+          </li>
+          <li><strong>Clean &amp; Lubricated Drivetrain:</strong> Keep your chain, cassette, and derailleurs running
+            smoothly and quietly.</li>
+          <li><strong>Component Tightening &amp; Inspection:</strong> Identify and address any potential loose parts or
+            wear and tear.</li>
+        </ul>
+
+        <p><strong>Advanced Overhaul (Ideal for Neglected or High-Mileage Bikes):</strong></p>
+        <p>Everything in the Standard Tune-Up, Plus:</p>
+        <ul>
+          <li><strong>Comprehensive Derailleur Adjustment:</strong> Optimize shifting for flawless performance across
+            your</li>
+          <li><strong>Entire gear range.</strong><br><strong>Cassette &amp; Chainring Wear Inspection:</strong> Identify
+            potential component replacements before they cause major issues.</li>
+          <li><strong>Wheel Truing:</strong> Eliminate wobbles and ensure true-running wheels for a smooth and efficient
+            ride.</li>
+          <li><strong>Deep Clean &amp; Lubrication:</strong> Restore your drivetrain to peak performance.</li>
+        </ul>
+
+
+
+        <p>Don’t wait for a breakdown to slow you down! Schedule your road bike service appointment online today and experience the Fix My Cycle difference.</p>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <a href="./bookmyslot.html"><button class="booknowbutton">Book Now</button></a>
+          </div>
+        </div>
+  
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+  <section class="section-padding">
+    <div class="container">
+       <!-- First Card -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+              <strong>  Standard Service Package Starts  From Rs.1199/-*</strong>
+                <!-- <span class="toggle-icon">+</span> -->
+                <ul class="tablist">
+                  <li>inspection for wear and tear</li>
+               <li>Check and adjust Fork, Wheels, Hubs, Bottom Bracket, Headset and Stem</li>
+               <li>Checking and Tightening all screws and bolts</li>
+               <li>check and adjust brakes</li>
+               <li>Gear and Drivetrain tuning and adjustment</li>
+               <li>Bearings check (chargeable if bearings need to be replaced)</li>
+               <li>Lubrication of Gear System</li>
+               <li>Lubrication of Brake System</li>
+               <li>Fixing Puncture (If any) and inflating the tires to accurate pressure</li>
+               <li>Wipe clean the bicycle</li>
+               <li>Test ride by service engineer</li>
+               <li>*Any spares consumed will be additional</li>
+                <a href="./bookmyslot.html"><button class="booknowbutton">Book Now</button></a>
+               </ul>
               </div>
             </div>
           </div>
-          
+    
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+               <strong> Advanced Service Package Starts  From Rs.1499/-*</strong>
+                <span class="toggle-icon">+</span>
+                <ul class="tablist">
+                  <li>Inspection for entire bicycle</li>
+               <li>Check and adjust Fork, Wheels, Hubs, Bottom Bracket, Headset and Stem</li>
+               <li>Checking and Tightening all screws and bolts</li>
+               <li>Bearings check (chargeable if bearings need to be replaced)</li>
+               <li>Brakes checked, adjusted and cleaned</li>
+               <li>Gear and Drivetrain tuning and adjustment</li>
+               <li>Greasing of all the components</li>
+               <li>Degrease the drivetrain</li>
+               <li>Lubrication of Gear System</li>
+               <li>Lubrication of Brake System</li>
+               <li>Fixing Puncture (If any) and inflating the tires to accurate pressure</li>
+               <li>Wheel truing if required (Wheel Bend/ Broken Wheel repair not covered under the package)</li>
+               <li>Complete cleaning of Bicycle</li>
+               <li>Test ride by service engineer</li>
+               <li>*Any spares consumed will be additional</li>
+                <a href="./bookmyslot.html"><button class="booknowbutton">Book Now</button></a>
+               </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+  <section class="section-padding mt-5">
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <a class="navbar-brand" href="#"
+              style="font-weight: bolder;color: inherit !important;font-size: 26px;"><span style="color: #08b427;">Track
+                &</span> Trails</a>
+            <p style="font-size: 15px;padding: 15px 0;opacity: 0.8;">We is Company with experience over for 10 Years and
+              we can give your best bikes in the world with accesories.</p>
+
+          </div>
+          <div class="col-lg-2">
+            <h6 class="text-center">Company</h6>
+            <ul>
+              <li>
+                <a href="./aboutus.html">About US</a>
+              </li>
+              <li>
+                <a href="..html">Our Packages</a>
+              </li>
+              <li>
+                <a href="./service.html">Services</a>
+              </li>
+              <li>
+                <a href="./bookmyslot.html">Book My Slot</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6 class="text-center">Services</h6>
+            <ul>
+              <li>
+                <a href="./service.html">Road Bikes</a>
+              </li>
+              <li>
+                <a href="./service.html">Mountain Bikes</a>
+              </li>
+              <li>
+                <a href="./service.html">Hybird Bikes</a>
+              </li>
+              <li>
+                <a href="./service.html">Electronic Bikes</a>
+              </li>
+              <li>
+                <a href="./service.html">Equipment</a>
+              </li>
+              <li>
+                <a href="./service.html">Apparel</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h6 class="text-center">Support</h6>
+            <ul>
+              <li>
+                <a href="./contact.html">Customers Service</a>
+              </li>
+              <!-- <li>
+                          <a href="./contact.html">Warrantly</a>
+                      </li> -->
+              <li>
+                <a href="./contact.html">Bike Sizing & Fit</a>
+              </li>
+              <li>
+                <a href="./contact.html">Guides</a>
+              </li>
+              <li>
+                <a href="./contact.html">Manuals & User</a>
+              </li>
+              <li>
+                <a href="./contact.html">Guides</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6>Follow us on social media</h6>
+            <div class="medsos" style="font-size: 25px;margin: 10px 0  20px 0;">
+              <i class="fab fa-facebook-f"
+                style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 15px;border-radius: 50%;"></i>
+              <i class="fab fa-instagram"
+                style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 13px;border-radius: 50%;"></i>
+              <i class="fab fa-twitter"
+                style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 11px;border-radius: 50%;"></i>
+              <i class="fab fa-linkedin"
+                style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 11px 13px;border-radius: 50%;"></i>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="footer-bottom" style="height: 50px; width: 100%;border-top: 1px solid #af9f9faf;">
-            <p style="text-align: center;">&copy; 2024 All rights reserved | Track & Trails
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom" style="height: 50px; width: 100%;border-top: 1px solid #af9f9faf;">
+              <p style="text-align: center;">&copy; 2024 All rights reserved | Track & Trails
+            </div>
           </div>
         </div>
       </div>
-      </div>
-  </footer>
-  <!--  footer -->
+    </footer>
+    <!--  footer -->
 
   </section>
 
@@ -225,41 +398,41 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerGroup: 1,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      500: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerGroup: 1,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
       },
-      868: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      1000: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      breakpoints: {
+        500: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        868: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
-    },
-  });
-</script>
+    });
+  </script>
 
 
- 
+
   <script src="asset/script.js"></script>
   <script src="asset/index.js"></script>
   <script src="asset/app.js"></script>
- 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
