@@ -20,57 +20,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
   <link rel="stylesheet" href="asset/style.css">
   <link rel="stylesheet" href="asset/index.css">
-   
-<style>
-  .sliders {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
 
-.sliders .image-itemss {
-  height: 100%;
-}
-
-.sliders .image-itemss .images {
-  height: 100%;
-}
-
-.card-testi {
-  padding: 20px 13px;
-  border-radius: 12px;
-}
-
-.arrowButton {
-  position: absolute !important;
-  top: 50% !important;
-  color: black !important;
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50% !important;
-  background-color: white !important;
-  padding: 10px !important;
-}
-
-.arrowButton.left {
-  left: 0 !important;
-}
-
-.arrowButton.right {
-  right: 0 !important;
-}
-
-.arrowButton::after {
-  font-size: 20px !important;
-}
-
-@media only screen and (max-width: 868px) {
-  .sliders {
-    margin: 0 20px;
-  }
-}
-
-</style>
 </head>
 
 <body>
@@ -91,8 +41,14 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About Us</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./history.html">Our History</a></li>
+              <li><a class="dropdown-item" href="./article.html">Our Article</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./service.html">Service</a>
@@ -101,10 +57,13 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <a class="nav-link" href="./packages.html">Packages</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./preowned.html">Pre-owned cycle</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./bookmyslot.html">Book my slot</a>
+            <a class="headerbtn btn" href="./bookmyslot.html" >Book my slot</a>
           </li>
         </ul>
         <!-- <div class="cart" style="margin-left: auto;position: relative;">

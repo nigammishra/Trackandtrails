@@ -22,6 +22,78 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   <link rel="stylesheet" href="asset/index.css">
 
 </head>
+<style>
+    /* Default styles for web view */
+
+    #service1 .row,
+    #service .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #service1 .col-md-6,
+    #service .col-md-6 {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+    
+
+    h2 {
+        color: #000000;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+
+        #service1 .col-md-6,
+        #service .col-md-6 {
+            flex: 1 1 100%;
+        }
+    }
+
+    /* Hide #service1 on mobile view and show #service */
+    @media (max-width: 768px) {
+        #service {
+            display: none;
+        }
+
+        #service1 {
+            display: flex;
+        }
+    }
+
+    /* Hide #service on web view and show #service1 */
+    @media (min-width: 769px) {
+        #service1 {
+            display: none;
+        }
+
+        #service {
+            display: flex;
+        }
+    }
+
+    /* Default light mode styles */
+  
+
+    /* Dark mode styles */
+    .darkMode h2 {
+        color: #fff;
+        /* Light text color for dark mode */
+    }
+   .servicesimage{
+    aspect-ratio: 2;
+    object-fit: cover;
+    border-radius: 10px;
+   }
+   .first{
+    /* border: 1px solid; */
+    box-shadow: rgba(136, 191, 144, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+   }
+</style>
 
 <body>
 
@@ -89,8 +161,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
                    <div class="page-title-content">
                        <ul>
                            <li><a href="index.html">Home</a></li>
-                           <li>Pre-owned cycle</li>
-
+                           <li>Articles</li>
                        </ul>
                    </div>
                </div>
@@ -100,6 +171,84 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 </section>
 
 
+
+<div class="container" style="margin-top: 60px;">
+    <div class="text-header">
+        <div class="man-content">
+            <div class="contnet">
+                <div class="content-text">
+                    <div class="text-content">
+                        <div class="content-main">
+                            <div class="main-content">
+                                <div class="content">
+                                    <div class="text-center">
+                                        <h2 style="color: #08b427; font-weight: bolder;">Our Articles</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
 
 
   <section class="section-padding mt-5" >

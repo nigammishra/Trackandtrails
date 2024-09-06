@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- FontAwesome for stars -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="asset/style.css">
+  <link rel="stylesheet" href="asset/index.css">
+
+</head>
+<style>
+    /* Default styles for web view */
+
+    #service1 .row,
+    #service .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #service1 .col-md-6,
+    #service .col-md-6 {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+    
+
+    h2 {
+        color: #000000;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+
+        #service1 .col-md-6,
+        #service .col-md-6 {
+            flex: 1 1 100%;
+        }
+    }
+
+    /* Hide #service1 on mobile view and show #service */
+    @media (max-width: 768px) {
+        #service {
+            display: none;
+        }
+
+        #service1 {
+            display: flex;
+        }
+    }
+
+    /* Hide #service on web view and show #service1 */
+    @media (min-width: 769px) {
+        #service1 {
+            display: none;
+        }
+
+        #service {
+            display: flex;
+        }
+    }
+
+    /* Default light mode styles */
+  
+
+    /* Dark mode styles */
+    .darkMode h2 {
+        color: #fff;
+        /* Light text color for dark mode */
+    }
+   .servicesimage{
+    aspect-ratio: 2;
+    object-fit: cover;
+    border-radius: 10px;
+   }
+   .first{
+    /* border: 1px solid; */
+    box-shadow: rgba(136, 191, 144, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+   }
+</style>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;"><span
+          style="color: #08b427;">Track &</span> Trails</a>
+      <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;outline: none;background: transparent;">
+        <img src="./asset/images/menu.PNG" width="45" alt="bar">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="margin-left: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./history.html">Our History</a></li>
+              <li><a class="dropdown-item" href="./article.html">Our Article</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./preowned.html">Pre-owned cycle</a>
+          </li>
+          <li class="nav-item">
+            <a class="headerbtn btn" href="./bookmyslot.html" >Book my slot</a>
+          </li>
+        </ul>
+        <!-- <div class="cart" style="margin-left: auto;position: relative;">
+            <i class="fal fa-shopping-cart" style="font-size: 25px;position: relative;"></i>
+            <p style="background-color: #08b427;color: #fff;position: absolute;font-size: 10px;padding: 0 5px;border-radius: 50%;margin-top: -33px;margin-left: 15px;">3</p>
+        </div>
+        <div class="dark" id="dark-mode-toggle" style="font-size: 15px;font-weight: 600;">
+            <i class="fas fa-adjust" style="font-size: 17px;"></i> Dark Mode
+        </div> -->
+      </div>
+    </div>
+  </nav>
+  <!--  navbar -->
+
+
+
+  <section class="">
+    <!-- Start Page Title Area -->
+    <div class=" page-title-area">
+       <div class="d-table">
+           <div class="d-table-cell">
+               <div class="container">
+                   <div class="page-title-content">
+                       <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li>About Us</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+
+<div class="container" style="margin-top: 60px;">
+    <div class="text-header">
+        <div class="man-content">
+            <div class="contnet">
+                <div class="content-text">
+                    <div class="text-content">
+                        <div class="content-main">
+                            <div class="main-content">
+                                <div class="content">
+                                    <div class="text-center">
+                                        <h2 style="color: #08b427; font-weight: bolder;">Our Services</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div id="service1">
+        <div class=" row" style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+            <!-- First row with image first -->
+             <div class="first">
+            <div class="col-md-6">
+                <img src="./asset/images/services1.jpg" class="img-fluid rounded-top  servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">DOOR STEP SERVICE</h2>
+                <p>
+                    FixMyCycle company offers doorstep bicycle services that provide customers with convenience and
+                    flexibility when it comes to maintaining their bikes. These services allow customers to schedule
+                    appointments at times that fit their busy schedules, eliminating the need to travel to a
+                    physical location or wait for a technician to arrive. The technicians come directly to the
+                    customer’s home or office, fully equipped with all the necessary tools and parts to repair or
+                    maintain the bicycle.
+                </p>
+            </div>
+        </div>
+            <!-- Second row with text first -->
+            <div class="first">
+            <div class="col-md-6 ">
+                <img src="./asset/images/services2.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">IN-STORE SERVICES</h2>
+                <p>
+                    Prefer to bring your bike into our state-of-the-art facility? No problem! Our knowledgeable
+                    staff will treat your ride like royalty, utilizing only top-quality components and equipment to
+                    ensure a flawless finish every time.
+                </p>
+            </div>
+        </div>
+
+            <!-- Third row with image first -->
+            <div class="first">
+            <div class="col-md-6">
+                <img src="./asset/images/services3.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">PICK UP AND DROP SERVICES</h2>
+                <p>
+                    Hassle-free bike repairs at your convenience! Book online or via our website, and our friendly
+                    techs will collect your bike from any location before bringing it to our shop for expert care.
+                    We’ll then safely return your bike to its original spot – quick, easy, and flexible!
+                </p>
+            </div>
+        </div>
+            <!-- Fourth row with text first -->
+            <div class="first">
+            <div class="col-md-6 ">
+                <img src="./asset/images/services4.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">APARTMENT SERVICE CAMPS</h2>
+                <p>
+                    We offer assistance in repairing or maintaining your bicycle, our on-site maintenance team has
+                    got you covered! We offer comprehensive bicycle repair packages for apartment communities.
+                    Starting from basic tune-ups to full overhauls using high-quality parts. You can request an
+                    appointment via our website or contact us directly by phone or email.
+                </p>
+            </div>
+        </div>
+
+            <!-- Fifth row with image first -->
+            <div class="first">
+            <div class="col-md-6">
+                <img src="./asset/images/services5.jpg" class="img-fluid rounded-top servicesimage"
+                    alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">CORPORATE SERVICE CAMPS</h2>
+                <p>
+                    We provide bicycle maintenance services specifically tailored for corporate companies that use
+                    bicycles as a mode of transportation within their campuses or facilities. This not only helps
+                    keep their employees healthy but also reduces carbon footprint and traffic congestion.
+                </p>
+            </div>
+        </div>
+            <!-- Sixth row with text first -->
+            <div class="first">
+            <div class="col-md-6 ">
+                <img src="./asset/images/services6.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">EVENT SUPPORT</h2>
+                <p>
+                    Fix my Cycle in partnership with local organizations, proudly supports various cycling events
+                    throughout the year. We understand that these events not only encourage physical activity but
+                    also foster community engagement and environmental awareness. As such, we strive to ensure every
+                    participant has an enjoyable experience during their ride. Prior to each event, we work closely
+                    with organizers to identify their needs and tailor our support accordingly. This includes
+                    supplying high-quality bikes, helmets, spare parts, tools, and repair kits, ensuring everything
+                    is in excellent condition for use on race day. We remain committed to providing exceptional
+                    support services that help make these events successful and memorable experiences for everyone
+                    involved!
+                </p>
+            </div>
+        </div>
+
+            <!-- Seventh row with image first -->
+             <div class="first">
+            <div class="col-md-6">
+                <img src="./asset/images/services7.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">PRE-OWNED CYCLES</h2>
+                <p>
+                    Discover effortless buying and selling of genuine pre-owned bikes with FMC Assured, FixMyCycle’s
+                    dedicated platform. Our expert-certified bicycles offer you unparalleled quality and confidence
+                    while making your transaction a breeze. We’ve taken the hassle out of purchasing second-hand
+                    bikes by providing transparent pricing, comprehensive inspection reports, and trusted
+                    warranties.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="service">
+        <div class=" row" style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+            <!-- First row with image first -->
+            <div class="col-md-6">
+                <img src="./asset/images/services1.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">DOOR STEP SERVICE</h2>
+                <p>
+                    FixMyCycle company offers doorstep bicycle services that provide customers with convenience and
+                    flexibility when it comes to maintaining their bikes. These services allow customers to schedule
+                    appointments at times that fit their busy schedules, eliminating the need to travel to a
+                    physical location or wait for a technician to arrive. The technicians come directly to the
+                    customer’s home or office, fully equipped with all the necessary tools and parts to repair or
+                    maintain the bicycle.
+                </p>
+            </div>
+
+            <!-- Second row with text first -->
+
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">IN-STORE SERVICES</h2>
+                <p>
+                    Prefer to bring your bike into our state-of-the-art facility? No problem! Our knowledgeable
+                    staff will treat your ride like royalty, utilizing only top-quality components and equipment to
+                    ensure a flawless finish every time.
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="./asset/images/services2.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+
+            <!-- Third row with image first -->
+            <div class="col-md-6">
+                <img src="./asset/images/services3.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">PICK UP AND DROP SERVICES</h2>
+                <p>
+                    Hassle-free bike repairs at your convenience! Book online or via our website, and our friendly
+                    techs will collect your bike from any location before bringing it to our shop for expert care.
+                    We’ll then safely return your bike to its original spot – quick, easy, and flexible!
+                </p>
+            </div>
+
+            <!-- Fourth row with text first -->
+
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">APARTMENT SERVICE CAMPS</h2>
+                <p>
+                    We offer assistance in repairing or maintaining your bicycle, our on-site maintenance team has
+                    got you covered! We offer comprehensive bicycle repair packages for apartment communities.
+                    Starting from basic tune-ups to full overhauls using high-quality parts. You can request an
+                    appointment via our website or contact us directly by phone or email.
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="./asset/images/services4.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <!-- Fifth row with image first -->
+            <div class="col-md-6">
+                <img src="./asset/images/services5.jpg" class="img-fluid rounded-top servicesimage"
+                    style="aspect-ratio: 1.5; object-fit: cover;" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">CORPORATE SERVICE CAMPS</h2>
+                <p>
+                    We provide bicycle maintenance services specifically tailored for corporate companies that use
+                    bicycles as a mode of transportation within their campuses or facilities. This not only helps
+                    keep their employees healthy but also reduces carbon footprint and traffic congestion.
+                </p>
+            </div>
+
+            <!-- Sixth row with text first -->
+
+            <div class="col-md-6 ">
+                <h2 style="color: #000000; font-weight: 600;">EVENT SUPPORT</h2>
+                <p>
+                    Fix my Cycle in partnership with local organizations, proudly supports various cycling events
+                    throughout the year. We understand that these events not only encourage physical activity but
+                    also foster community engagement and environmental awareness. As such, we strive to ensure every
+                    participant has an enjoyable experience during their ride. Prior to each event, we work closely
+                    with organizers to identify their needs and tailor our support accordingly. This includes
+                    supplying high-quality bikes, helmets, spare parts, tools, and repair kits, ensuring everything
+                    is in excellent condition for use on race day. We remain committed to providing exceptional
+                    support services that help make these events successful and memorable experiences for everyone
+                    involved!
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="./asset/images/services6.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <!-- Seventh row with image first -->
+            <div class="col-md-6">
+                <img src="./asset/images/services7.jpg" class="img-fluid rounded-top servicesimage" alt="Service Image" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #000000; font-weight: 600;">PRE-OWNED CYCLES</h2>
+                <p>
+                    Discover effortless buying and selling of genuine pre-owned bikes with FMC Assured, FixMyCycle’s
+                    dedicated platform. Our expert-certified bicycles offer you unparalleled quality and confidence
+                    while making your transaction a breeze. We’ve taken the hassle out of purchasing second-hand
+                    bikes by providing transparent pricing, comprehensive inspection reports, and trusted
+                    warranties.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <section class="section-padding mt-5" >
+    <!-- footer -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3">
+                  <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;font-size: 26px;"><span style="color: #08b427;">Track &</span> Trails</a>
+                  <p style="font-size: 15px;padding: 15px 0;opacity: 0.8;">We is Company with experience over for 10 Years and we can give your best bikes in the world with accesories.</p>
+                 
+              </div>
+              <div class="col-lg-2">
+                  <h6 class="text-center">Company</h6>
+                  <ul>
+                      <li>
+                          <a href="./aboutus.html">About US</a>
+                      </li>
+                      <li>
+                          <a href="./packages.html">Our Packages</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Services</a>
+                      </li>
+                      <li>
+                          <a href="./bookmyslot.html">Book My Slot</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-2">
+                  <h6 class="text-center">Services</h6>
+                  <ul>
+                      <li>
+                          <a href="./service.html">Road Bikes</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Mountain Bikes</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Hybird Bikes</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Electronic Bikes</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Equipment</a>
+                      </li>
+                      <li>
+                          <a href="./service.html">Apparel</a>
+                      </li>
+                  </ul>
+              </div>
+              
+              <div class="col-lg-2">
+                  <h6 class="text-center">Support</h6>
+                  <ul>
+                      <li>
+                          <a href="./contact.html">Customers Service</a>
+                      </li>
+                      <!-- <li>
+                          <a href="./contact.html">Warrantly</a>
+                      </li> -->
+                      <li>
+                          <a href="./contact.html">Bike Sizing & Fit</a>
+                      </li>
+                      <li>
+                          <a href="./contact.html">Guides</a>
+                      </li>
+                      <li>
+                          <a href="./contact.html">Manuals & User</a>
+                      </li>
+                      <li>
+                          <a href="./contact.html">Guides</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6>Follow us on social media</h6>
+                <div class="medsos" style="font-size: 25px;margin: 10px 0  20px 0;">
+                  <i class="fab fa-facebook-f" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 15px;border-radius: 50%;"></i>
+                  <i class="fab fa-instagram" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 13px;border-radius: 50%;"></i>
+                  <i class="fab fa-twitter" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 10px 11px;border-radius: 50%;"></i>
+                  <i class="fab fa-linkedin" style="margin-right: 10px;background-color: rgb(236, 236, 236);padding: 11px 13px;border-radius: 50%;"></i>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-bottom" style="height: 50px; width: 100%;border-top: 1px solid #af9f9faf;">
+            <p style="text-align: center;">&copy; 2024 All rights reserved | Track & Trails
+          </div>
+        </div>
+      </div>
+      </div>
+  </footer>
+  <!--  footer -->
+
+  </section>
+
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      868: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+
+ 
+  <script src="asset/script.js"></script>
+  <script src="asset/index.js"></script>
+  <script src="asset/app.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

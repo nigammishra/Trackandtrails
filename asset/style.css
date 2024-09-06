@@ -27,7 +27,14 @@
     cursor: pointer;
     margin-top: 10px;
 }
-
+.headerbtn{
+  background-color: #ff6666;
+  color: white;
+  border-radius: 5px;
+}
+.headerbtn{
+  border: 1px solid #ff6666 ;
+}
 .sub-heading-content{
     text-align: center;
     font-family: "Poppins", Sans-serif;

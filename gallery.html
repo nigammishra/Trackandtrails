@@ -17,11 +17,138 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <!-- FontAwesome for stars -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
 
   <link rel="stylesheet" href="asset/style.css">
   <link rel="stylesheet" href="asset/index.css">
 
 </head>
+<style>
+    body {
+/* background-color: #434c50; */
+min-height: 100vh;
+font: normal 16px sans-serif;
+/* padding: 40px 0; */
+}
+
+.container.gallery-container {
+background-color: #fff;
+color: #35373a;
+min-height: 100vh;
+padding: 30px 50px;
+}
+
+.gallery-container h1 {
+text-align: center;
+margin-top: 50px;
+font-family: 'Droid Sans', sans-serif;
+font-weight: bold;
+}
+
+.gallery-container p.page-description {
+text-align: center;
+margin: 25px auto;
+font-size: 18px;
+color: #999;
+}
+
+.tz-gallery {
+padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+padding: 10px;
+/* border: 1px solid; */
+}
+
+.tz-gallery .lightbox img {
+width: 100%;
+border-radius: 0;
+position: relative;
+border: 1px solid #a9a0a0;
+border-radius: 10px;
+height: 100%;
+padding: 10px;
+z-index: 1;
+aspect-ratio: 2;
+object-fit: cover;
+}
+
+/* .tz-gallery .lightbox:before {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -13px;
+margin-left: -13px;
+opacity: 0;
+color: #fff;
+font-size: 26px;
+font-family: 'Glyphicons Halflings';
+content: '\e003';
+pointer-events: none;
+z-index: 9000;
+transition: 0.4s;
+} */
+
+
+/* .tz-gallery .lightbox:after {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+background-color: rgba(55, 57, 59, 0.7);
+content: '';
+transition: 0.4s;
+} */
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+opacity: 1;
+}
+
+.baguetteBox-button {
+background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+body {
+    padding: 0;
+}
+}
+.image-container {
+position: relative;
+display: inline-block;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+opacity: 0;
+transition: opacity 0.3s ease;
+border-radius: 10px;
+}
+
+.overlay i {
+color: white;
+font-size: 24px;
+z-index: 99;
+}
+
+.image-container:hover .overlay {
+opacity: 1;
+}
+
+</style>
 
 <body>
 
@@ -89,8 +216,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
                    <div class="page-title-content">
                        <ul>
                            <li><a href="index.html">Home</a></li>
-                           <li>Pre-owned cycle</li>
-
+                           <li>Gallery</li>
                        </ul>
                    </div>
                </div>
@@ -98,6 +224,101 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
        </div>
    </div>
 </section>
+
+
+
+
+
+
+<div class="container gallery-container">
+
+<h1>Welcome to our community</h1>
+
+<p class="page-description text-center">join us for healthy live </p>
+
+<div class="tz-gallery">
+
+    <div class="row gx-2 g-2">
+
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/01.jpg">
+                <img src="./gallery/01.jpg" alt="Bridge">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/02.jpg">
+                <img src="./gallery/02.jpg" alt="Park">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/03.jpg">
+                <img src="./gallery/03.jpg" alt="Tunnel">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/04.jpg">
+                <img src="./gallery/04.jpg" alt="Traffic">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/05.jpg">
+                <img src="./gallery/05.jpg" alt="Coast">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div> 
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/07.jpg">
+                <img src="./gallery/07.jpg" alt="Rails">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+            <a class="lightbox" href="./gallery/08.jpg">
+                <img src="./gallery/08.jpg" alt="Rails">
+            </a>
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </div>
+        
+         
+
+    </div>
+
+</div>
+
+</div>
 
 
 
@@ -236,8 +457,10 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   });
 </script>
 
-
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
   <script src="asset/script.js"></script>
   <script src="asset/index.js"></script>
   <script src="asset/app.js"></script>
