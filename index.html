@@ -22,15 +22,18 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   <link rel="stylesheet" href="asset/index.css">
 
 </head>
+ 
 
 <body>
 
-
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon -->
+  </button>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container">
       <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;"><span
-          style="color: #08b427;">Track &</span> Trails</a>
+          style="color: #08b427;">Riders</span> Point</a>
       <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation"
         style="border: none;outline: none;background: transparent;">
@@ -214,13 +217,13 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 
 
-  <section class="howitwork " style="padding-top: 80px;">
+  <section class="howitwork" style="padding-top: 80px;">
     <div class="container">
-      <p class="sub-heading-content">How it Works</p>
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+       <p class="sub-heading-content">How it Works</p>
+     <!-- <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
         <div class="col">
-          <div class="card h-100" style="background-color: transparent;color: #fff;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card h-100" style="background-color: transparent; color: #fff;">
+            <img src="..." class="card-img-top mx-auto d-block" alt="..."> 
             <div class="card-body text-center">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -229,8 +232,8 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
           </div>
         </div>
         <div class="col">
-          <div class="card h-100" style="background-color: transparent;color: #fff;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card h-100" style="background-color: transparent; color: #fff;">
+            <img src="..." class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a short card.</p>
@@ -238,8 +241,8 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
           </div>
         </div>
         <div class="col">
-          <div class="card h-100" style="background-color: transparent;color: #fff;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card h-100" style="background-color: transparent; color: #fff;">
+            <img src="..." class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -247,9 +250,65 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             </div>
           </div>
         </div>
+      </div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      <div class="card featured-icon-card signpost" style="background-color: transparent; color: #fff;cursor: pointer;">
+        <div class="featured-icon-container">
+          <i class="fas fa-mobile-alt"></i>
+
+        </div>
+        <div class="featured-icon-textbox">
+          <span> <strong> Book Online </strong> </span>
+          <p> Book Your Bicycle Repair Online.</p>
+        </div>
       </div>
+
+    </div>
+    <!--End col-md-4-->
+    <div class="col-md-4">
+
+      <div class="card featured-icon-card"   style="background-color: transparent; color: #fff;cursor: pointer;">
+        <div class="featured-icon-container">
+          <i class="fas fa-home"></i>
+
+        </div>
+        <div class="featured-icon-textbox">
+          <span> <strong>   We come to your Doorstep   </strong> </span>
+          <p>  Our Certified Technician come to you</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End col-md-4-->
+    <div class="col-md-4">
+
+      <div class="card featured-icon-card"  style="background-color: transparent; color: #fff;cursor: pointer;">
+        <div class="featured-icon-container">
+          <i class="fas fa-bicycle"></i>
+
+        </div>
+        <div class="featured-icon-textbox">
+          <span> <strong> 
+            Happy Cycling						 </strong> </span>
+          <p> 
+						Do what you love more					</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End col-md-4-->
+   
+
+  </div>
+</div>
+</div>
     </div>
   </section>
+  
 
 
   <section class="section-padding">
@@ -257,15 +316,17 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
       <p class="sub-heading-content">Our Service Packages</p>
       <div class="tab-titles mt-5">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3"></div>
+          <div class="col-md-2">
             <div class="tab-title active" data-tab="1">Non Gear Bicycle</div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-2">
             <div class="tab-title" data-tab="2">Gear Bicycle</div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-2">
             <div class="tab-title" data-tab="3">Road Bicycle</div>
           </div>
+          <div class="col-md-3"></div>
           <!-- <div class="col-md-3"><div class="tab-title" data-tab="4">Electric Bicycle</div></div> -->
         </div>
 
@@ -610,7 +671,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
       <div class="container">
           <div class="row">
               <div class="col-lg-3">
-                  <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;font-size: 26px;"><span style="color: #08b427;">Track &</span> Trails</a>
+                  <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;font-size: 26px;"><span style="color: #08b427;">Riders</span> Point</a>
                   <p style="font-size: 15px;padding: 15px 0;opacity: 0.8;">We is Company with experience over for 10 Years and we can give your best bikes in the world with accesories.</p>
                  
               </div>

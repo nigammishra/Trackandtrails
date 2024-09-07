@@ -207,6 +207,73 @@
     margin-top: 5px;
   }
   
+
+  
+ /* Style for the Scroll to Top button */
+ #scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  bottom: 30px; /* Place the button at the bottom */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; /* Ensure the button is on top of other content */
+  background-color: #4CAF50; /* Dark background */
+  color: white; /* Text color */
+  padding: 20px; /* Padding around the button */
+  border: none; /* Remove borders */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ff6666;
+}
+
+
+
+
+/*Demo Only*/
+.featured-icon-card{
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-bottom: 2em
+  
+  
+}
+.featured-icon-card:hover .fa{
+
+}
+.featured-icon-card:hover{
+background: #08b427;
+  color: white;
+  
+}
+
+.featured-icon-card:hover .featured-icon-container{
+background: #fff;
+  color: #08b427;
+}
+
+.featured-icon-container{
+  font-size: 2em;
+  width: 60px;
+  height: 100%;
+  background: #08b427;
+  color: white;
+  border-radius: 15px;
+  margin: auto;
+  transition: background-color 0.3s,  color 0.3s;
+}
+
+.fa-bs-responsive{
+  line-height: 2em;
+}
+
+.featured-icon-textbox{
+  margin-top: 1rem;
+}
 /* responsive css */
 
 

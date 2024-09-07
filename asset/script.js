@@ -75,4 +75,24 @@ document.querySelectorAll('.tab-title').forEach((tab) => {
     // Initial check
     handleScroll();
   });
+
   
+      // Get the button element
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show the button when the user scrolls down 300px from the top of the document
+      window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+  
+      // Scroll to the top of the document when the button is clicked
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // Smooth scroll behavior
+        });
+      }
