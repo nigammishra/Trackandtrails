@@ -20,6 +20,94 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
   <link rel="stylesheet" href="asset/style.css">
   <link rel="stylesheet" href="asset/index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container form{
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form .row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column{
+    flex: 1 1 250px
+}
+
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
+
+.column .input-box{
+    margin: 15px 0;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.input-box select{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box{
+    margin-top: 5px;
+}
+
+.input-box img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+    cursor: pointer;
+}
+
+form .btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #08b427;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btn:hover{
+  background-color: #333;
+    color: #fff;
+}
+  </style>
 
 </head>
 
@@ -107,6 +195,79 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
            </div>
        </div>
    </div>
+</section>
+
+
+<section class="" style="padding-top: 40px;">
+<div class="container" >
+  <div class="row" >
+    <div class="col-12" style="display: flex;justify-content: center;align-items: center;">
+    
+<!-- Form -->
+<form id="enrollForm" onsubmit="sendEmail(event)">
+  <h3 class="title text-center" style="font-weight: 600;">Book Your Slot Now</h3>
+  <div class="row">
+      <div class="column">
+          <div class="input-box">
+              <span>Full Name :</span>
+              <input type="text" name="full_name" placeholder="FrontEnd Ace" required>
+          </div>
+          <div class="input-box">
+              <span>Email :</span>
+              <input type="email" name="email" placeholder="frontendace@example.com" required>
+          </div>
+          <div class="input-box">
+              <span>Address :</span>
+              <input type="text" name="address" placeholder="Street - Locality" required>
+          </div>
+          <div class="input-box">
+              <span>City :</span>
+              <input type="text" name="city" placeholder="Bhubaneswar" required>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="input-box">
+              <span>Select your category :</span>
+              <select id="category" name="category" required>
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="Non Gear Bicycle Service">Non Gear Bicycle Service</option>
+                  <option value="Gear Bicycle Service">Gear Bicycle Service</option>
+                  <option value="Road Bicycle Service">Road Bicycle Service</option>
+                  <option value="New Bicycle Assembling">New Bicycle Assembling</option>
+                  <option value="Dismantling and Boxing">Dismantling and Boxing</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <span>Brand Name:</span>
+              <input type="text" name="brand_name" placeholder="Brand Name" required>
+          </div>
+          <div class="input-box">
+              <span>Phone Number :</span>
+              <input type="number" name="phone" placeholder="+918260821103" required>
+          </div>
+          <div class="flex">
+              <div class="input-box">
+                  <span>State :</span>
+                  <input type="text" name="state" placeholder="Odisha" required>
+              </div>
+              <div class="input-box">
+                  <span>Zip Code :</span>
+                  <input type="number" name="zip_code" placeholder="123 456" required>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <button type="submit" class="btn" style="font-weight: 600;">Submit</button>
+</form>
+
+
+    </div>
+  </div>
+  
+</div>
+
 </section>
 
 
@@ -214,37 +375,50 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 
 
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+         emailjs.init("GWBqfW43QZ_MiFFFo"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+     })();
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<!-- EmailJS Integration Script -->
+<script>
+  function sendEmail(event) {
+      event.preventDefault(); // Prevent form from reloading the page
+  
+      // Collect form data
+      const form = document.getElementById('enrollForm');
+      const formData = new FormData(form);
+  
+      // Send the email through EmailJS
+      emailjs.sendForm('service_bgv08ep', 'template_z2kwwug', form)
+      .then(function(response) {
+          // Reset form fields
+          form.reset();
+  
+          // Show SweetAlert for success
+          Swal.fire({
+              icon: 'success',
+              title: 'Success!',
+              text: 'Your message has been sent successfully.',
+              confirmButtonText: 'OK'
+          });
+      }, function(error) {
+          // Show SweetAlert for failure
+          Swal.fire({
+              icon: 'error',
+              title: 'Failed...',
+              text: 'There was an error sending your message. Please try again later.',
+              confirmButtonText: 'OK'
+          });
+      });
+  }
+  </script>
+  
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerGroup: 1,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      500: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      868: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1000: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
-  });
-</script>
 
 
  
