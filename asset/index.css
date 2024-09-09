@@ -92,13 +92,13 @@ footer h6{
         margin-bottom: -8px;
         display: none;
     }
-    ul li .active::after{
+    /* ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: none;
-    }
+    } */
     .section-about .img-content img{
         width: 100%;
         height: 100%;
@@ -154,13 +154,13 @@ footer h6{
         margin-bottom: -8px;
         display: none;
     }
-    ul li .active::after{
+    /* ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: none;
-    }
+    } */
     .section-about .img-content img{
         width: 100%;
         height: 100%;
@@ -216,13 +216,13 @@ footer h6{
         margin-bottom: -8px;
         display: none;
     }
-    ul li .active::after{
+    /* ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: none;
-    }
+    } */
     .section-about .img-content img{
         width: 100%;
         height: 100%;
@@ -279,13 +279,13 @@ footer h6{
         margin-bottom: -8px;
         display: none;
     }
-    ul li .active::after{
+    /* ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: none;
-    }
+    } */
     .section-about .img-content img{
         width: 100%;
         height: 100%;
@@ -342,13 +342,13 @@ footer h6{
         margin-bottom: -8px;
         display: block;
     }
-    .navbar ul li .active::after{
+    /* .navbar ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: block;
-    }
+    } */
     .section-about .img-content img{
         width: 130%;
         height: 360px;
@@ -406,13 +406,13 @@ footer h6{
         margin-bottom: -8px;
         display: block;
     }
-    .navbar ul li .active::after{
+    /* .navbar ul li .active::after{
         content: '';
         border-bottom: 3px solid #08b427 !important;
         padding-bottom: 5px;
         margin-bottom: -8px;
         display: block;
-    }
+    } */
     .section-about .img-content img{
         width: 110%;
         height: 110%;
