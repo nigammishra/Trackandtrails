@@ -288,4 +288,16 @@ a{
       width: 300px; /* Sets the width to 300px for mobile view */
     }
   }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .responsive-image {
+      height: 450px;
+    }
+  }
   
