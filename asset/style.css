@@ -281,6 +281,33 @@ a{
 }
 /* responsive css */
 
+.hero-section {
+  height: 100vh; 
+  /* width: 99vw; Full screen width */
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item img {
+  height: 100vh;
+  width: 100%; /* Ensure full width */
+  object-fit: cover; /* Keeps image proportions */
+  border-radius: 10px; /* Border radius for rounded corners */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.carousel-caption h5, 
+.carousel-caption p {
+  color: #fff;
+}
+
+
 
   /* Mobile-specific styling */
   @media (max-width: 767px) {
@@ -300,4 +327,22 @@ a{
       height: 450px;
     }
   }
+
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-section{
+      height: 100%;
+    }
+    .carousel-item img {
+      height: 100%;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
   
