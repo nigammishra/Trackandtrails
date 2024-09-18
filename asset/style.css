@@ -282,7 +282,7 @@ a{
 /* responsive css */
 
 .hero-section {
-  height: 100vh; 
+  height: 100%; 
   /* width: 99vw; Full screen width */
   overflow: hidden;
   padding: 0;
@@ -290,7 +290,7 @@ a{
 }
 
 .carousel-item img {
-  height: 100vh;
+  height: 100%;
   width: 100%; /* Ensure full width */
   object-fit: cover; /* Keeps image proportions */
   border-radius: 10px; /* Border radius for rounded corners */
