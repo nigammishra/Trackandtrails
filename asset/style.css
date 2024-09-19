@@ -543,6 +543,10 @@ footer h6{
     font-weight: bolder;
     padding-bottom: 15px;
 }
+footer{
+  background-color: aliceblue;
+  padding-top: 30px;
+}
 
 .nav-link.active {
   color: #08b427 !important; /* Change the color as needed */
