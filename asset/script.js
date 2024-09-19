@@ -96,3 +96,16 @@ document.querySelectorAll('.tab-title').forEach((tab) => {
           behavior: "smooth" // Smooth scroll behavior
         });
       }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+      
+        navLinks.forEach(link => {
+          if (link.href === window.location.href) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active'); // Remove active class from non-active links
+          }
+        });
+      });
+      
