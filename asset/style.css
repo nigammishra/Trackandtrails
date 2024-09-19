@@ -27,14 +27,7 @@
     cursor: pointer;
     margin-top: 10px;
 }
-.headerbtn{
-  background-color: #85ff66;
-  color: white;
-  border-radius: 5px;
-}
-.headerbtn:hover{
-  border: 1px solid #8fff66 ;
-}
+
 .sub-heading-content{
     text-align: center;
     font-family: "Poppins", Sans-serif;
@@ -549,13 +542,29 @@ footer{
 }
 
 .nav-link.active {
-  color: #08b427 !important; /* Change the color as needed */
+  /* color: #08b427 !important; Change the color as needed */
   /* border: 2px solid #08b427; Add a bottom border */
-  font-weight: bold; /* Optional: Make the active link bold */
+ 
   border-radius: 10px;
+  background-color: #85ff66;
+  color: #fff;
 }
-
-
+.nav-link{
+  font-weight: 500; /* Optional: Make the active link bold */
+}
+.headerbtn{
+  
+  color: 000;
+  border-radius: 5px;
+}
+.headerbtn:hover{
+  border: 1px solid #8fff66 ;
+  background-color: #85ff66;
+}
+.headerbtn.active{
+  border: 1px solid #8fff66 ;
+  background-color: #85ff66;
+}
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 768px) {
   .navresponsiveimage{

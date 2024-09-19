@@ -98,7 +98,7 @@ document.querySelectorAll('.tab-title').forEach((tab) => {
       }
 
       document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.nav-link, .headerbtn');
       
         navLinks.forEach(link => {
           if (link.href === window.location.href) {
