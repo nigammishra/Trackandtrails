@@ -154,61 +154,64 @@ opacity: 1;
   <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
     <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon -->
   </button>
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-weight: bolder;color: inherit !important;"><span
+        style="color: #08b427;">Riders</span> Point</a>
+    <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation"
+      style="border: none;outline: none;background: transparent;">
+      <img  class="navresponsiveimage" src="./asset/images/menu.PNG" width="45" alt="bar">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="margin-left: auto;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
 
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <div class="container">
-      <a class="navbar-brand" href="./index.html" style="font-weight: bolder;color: inherit !important;"><span
-          style="color: #08b427;">Riders</span> Point</a>
-      <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation"
-        style="border: none;outline: none;background: transparent;">
-        <img src="./asset/images/menu.PNG" width="45" alt="bar">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="margin-left: auto;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./history.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./service.html">Service</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Packages
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./nongearbicycleservice.html">Non Gear Bicycle Service</a></li>
-              <li><a class="dropdown-item" href="./gearbicycleservice.html">Gear Bicycle Service</a></li>
-              <li><a class="dropdown-item" href="./roadbicycleservice.html">Road Bicycle Service</a></li>
-              <li><a class="dropdown-item" href="./newbicycleservices.html">New Bicycle Assembling</a></li>
-              <li><a class="dropdown-item" href="./dismantlingandboxing.html">Dismantling and Boxing</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./preowned.html">Pre-owned cycle</a>
-          </li>
-          <li class="nav-item">
-            <a class="headerbtn btn" href="./bookmyslot.html" >Book my slot</a>
-          </li>
-        </ul>
-        <!-- <div class="cart" style="margin-left: auto;position: relative;">
-            <i class="fal fa-shopping-cart" style="font-size: 25px;position: relative;"></i>
-            <p style="background-color: #08b427;color: #fff;position: absolute;font-size: 10px;padding: 0 5px;border-radius: 50%;margin-top: -33px;margin-left: 15px;">3</p>
-        </div>
-        <div class="dark" id="dark-mode-toggle" style="font-size: 15px;font-weight: 600;">
-            <i class="fas fa-adjust" style="font-size: 17px;"></i> Dark Mode
-        </div> -->
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./service.html">Service</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Packages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./nongearbicycleservice.html">Non Gear Bicycle Service</a></li>
+            <li><a class="dropdown-item" href="./gearbicycleservice.html">Gear Bicycle Service</a></li>
+            <li><a class="dropdown-item" href="./roadbicycleservice.html">Road Bicycle Service</a></li>
+            <li><a class="dropdown-item" href="./newbicycleservices.html">New Bicycle Assembling</a></li>
+            <li><a class="dropdown-item" href="./dismantlingandboxing.html">Dismantling and Boxing</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./preowned.html">Pre-owned cycle</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="headerbtn btn" href="./bookmyslot.html">Book my slot</a>
+        </li> -->
+      </ul>
+      <button class="headerbtn btn" href="./bookmyslot.html">Book my slot</button>
+      <!-- <div class="cart" style="margin-left: auto;position: relative;">
+          <i class="fal fa-shopping-cart" style="font-size: 25px;position: relative;"></i>
+          <p style="background-color: #08b427;color: #fff;position: absolute;font-size: 10px;padding: 0 5px;border-radius: 50%;margin-top: -33px;margin-left: 15px;">3</p>
       </div>
+      <div class="dark" id="dark-mode-toggle" style="font-size: 15px;font-weight: 600;">
+          <i class="fas fa-adjust" style="font-size: 17px;"></i> Dark Mode
+      </div> -->
     </div>
-  </nav>
-  <!--  navbar -->
+  </div>
+</nav>
+<!--  navbar -->
 
 
 
